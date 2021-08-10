@@ -1,5 +1,5 @@
 import React from "react";
-import { Cardwrap, Cardimg, Cardscontainer } from "./Card.style";
+import { Cardwrap, Cardimg, Cardscontainer, Line } from "./Card.style";
 import { Text, Text2 } from "../Mainbody.style";
 import cardimg1 from "../../../assets/images/icon-brand-recognition.svg";
 import cardimg2 from "../../../assets/images/icon-detailed-records.svg";
@@ -20,6 +20,7 @@ function Card() {
           a thing.Branded links help instill confidence in your content.
         </Text2>
       </Cardwrap>
+      <Line />
       <Cardwrap>
         <Cardimg>
           <img src={cardimg2} alt="brand recognition" />
@@ -32,6 +33,7 @@ function Card() {
           people engage with your consent helps inform better decisions.
         </Text2>
       </Cardwrap>
+      <Line />
       <Cardwrap>
         <Cardimg>
           <img src={cardimg3} alt="brand recognition" />

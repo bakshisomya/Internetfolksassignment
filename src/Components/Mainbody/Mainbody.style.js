@@ -6,41 +6,36 @@ import mobilefooterbg from "../../assets/images/bg-boost-mobile.svg";
 
 export const Container = styled.div`
   width: 100%;
-  height:310vh;
 `;
 export const Header = styled.div`
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  width: 100%;
-  height: 34%;
-  padding: 2rem 10rem 0rem 10rem;
-  @media only screen and (max-width: 750px) {
+  position: relative;
+  @media only screen and (max-width: 896px) {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 29rem 0rem 25rem 0rem;
+    padding: 29rem 0rem 12rem 0rem;
+  }
+  @media only screen and (min-width: 897px) {
+    padding: 5rem 10rem 16rem 10rem;
   }
 `;
 export const Illustration = styled.img`
   position: absolute;
-  top: 4%;
-  right: -55%;
-  height: 11.8%;
-  @media only screen and (min-width: 750px) {
-    top: 8%;
-    right: -10%;
-    height: 450px;
+  top: 0;
+  right: -52%;
+  width: 600px;
+  @media only screen and (min-width: 897px) {
+    top: 5%;
+    right: -8%;
+    width: 650px;
   }
 `;
 export const Headline = styled.div`
-  height: 100%;
-  @media only screen and (min-width: 750px) {
+  @media only screen and (min-width: 897px) {
     width: 50%;
-    margin-top: 10rem;
   }
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 896px) {
     width: 100%;
     padding: 0rem 1.1rem 0rem 1.1rem;
     text-align: center;
@@ -53,7 +48,7 @@ export const Text = styled.h1`
   letter-spacing: ${(props) => props.lettersp};
   color: ${(props) => props.color};
   margin-bottom: ${(props) => props.margin};
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 896px) {
     font-size: ${(props) => props.fontsizemobile};
     font-weight: ${(props) => props.fontweightmobile};
     line-height: ${(props) => props.linehmobile};
@@ -66,27 +61,28 @@ export const Body = styled.div`
   position: relative;
   width: 100%;
   background-color: #eff1f7;
-  margin-top: 3rem;
-  padding: 8rem 10rem 8rem 10rem;
-  @media only screen and (max-width: 750px) {
-    padding: 1.2rem;
+  padding: 8rem 10rem 0rem 10rem;
+  @media only screen and (max-width: 896px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 1.2rem 1.2rem 1.2rem;
   }
 `;
 export const Form = styled.form`
-  position: absolute;
-  top: -5%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  z-index: 99;
   width: 76%;
-  max-height: 160px;
-  padding: 2rem 0rem 2rem 0rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   border-radius: 10px;
   background-color: #3b3054;
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 896px) {
+    position: absolute;
+    top: -7%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 99;
     width: 85%;
     display: flex;
     flex-direction: column;
@@ -95,6 +91,7 @@ export const Form = styled.form`
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 250px;
+    padding: 2rem 0rem 2rem 0rem;
     & div {
       display: flex;
       flex-direction: column;
@@ -104,7 +101,13 @@ export const Form = styled.form`
       margin-bottom: 0.5rem;
     }
   }
-  @media only screen and (min-width: 750px) {
+  @media only screen and (min-width: 897px) {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 99;
+    padding: 3rem 2rem 3rem 2rem;
     background-image: url(${bg});
     background-position: center;
     background-size: cover;
@@ -126,12 +129,11 @@ export const Input = styled.input`
     color: ${(props) => props.placeholdercolor};
     font-size: 17px;
   }
-  @media only screen and (min-width: 750px) {
+  @media only screen and (min-width: 897px) {
     width: 95%;
     padding: 0.8rem 2rem;
-    margin-right: 1.3rem;
   }
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 896px) {
     width: 90%;
     padding: 1rem 1rem;
   }
@@ -144,7 +146,7 @@ export const Text2 = styled.p`
   color: ${(props) => props.color};
   margin-bottom: ${(props) => props.margin};
   text-align: ${(props) => props.textalign};
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 896px) {
     font-size: ${(props) => props.fontsizemobile};
     font-weight: ${(props) => props.fontweightmobile};
     line-height: ${(props) => props.linehmobile};
@@ -157,49 +159,50 @@ export const Text2 = styled.p`
 export const Lowerbody = styled.div`
   position: relative;
   width: 100%;
-  max-height: 100%;
-  padding-top: 10rem;
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  ${"" /* background-color: red; */}
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 896px) {
     text-align: center;
+    padding-bottom: 5rem;
   }
-  @media only screen and (min-width: 750px) {
-    padding-top: 3rem;
+  @media only screen and (min-width: 897px) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 `;
 export const Footer = styled.div`
   width: 100%;
-  height: 12%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(${footerbg});
-  background-size: cover;
-  background-position: center;
   background-color: #3b3054;
   text-align: center;
-  @media only screen and (max-width: 750px) {
-    height: 15%;
+  @media only screen and (max-width: 896px) {
     background-image: url(${mobilefooterbg});
     background-size: cover;
     background-position: center;
+    padding: 7rem 0 7rem 0;
+  }
+  @media only screen and (min-width: 897px) {
+    background-image: url(${footerbg});
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 0 3rem 0;
   }
 `;
 export const Footerlinks = styled.div`
   width: 100%;
-  height: 14.7%;
   background-color: #232127;
-  padding: 4rem 10rem 4rem 10rem;
-  @media only screen and (max-width: 750px) {
-    height: 31%;
-    padding: 3rem 2rem 0 2rem;
+  @media only screen and (max-width: 896px) {
+    padding: 4rem 2rem 3rem 2rem;
     display: flex;
     flex-direction: column;
     position: relative;
-    overflow-y: scroll;
+  }
+  @media only screen and (min-width: 896px) {
+    padding: 4rem 10rem 4rem 10rem;
   }
 `;

@@ -9,7 +9,7 @@ export const Button = styled.button`
   border: none;
   font-weight: ${(props) => props.fontweight};
   margin-left: ${(props) => props.marginleft};
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 896px) {
     width: ${(props) => props.widthmobile};
     padding: ${(props) => props.paddingmobile};
     background-color: ${(props) => props.backgroundcolormobile};

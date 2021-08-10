@@ -65,6 +65,7 @@ function Nav() {
           fontweight="500"
           fontsize="14px"
           radius="50px"
+          marginleft="18px"
         >
           Sign Up
         </Button>

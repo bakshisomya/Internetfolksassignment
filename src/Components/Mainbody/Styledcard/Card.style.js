@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 export const Cardscontainer = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 100%;
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 896px) {
     flex-direction: column;
     align-items: center;
   }
@@ -15,11 +17,14 @@ export const Cardwrap = styled.div`
   border-radius: 10px;
   background-color: white;
   padding: 4rem 2rem 2rem 2rem;
-  @media only screen and (max-width: 750px) {
-    margin-bottom: 3rem;
-  }
-  @media only screen and (min-width: 750px) {
-    margin-right: 2rem;
+  @media only screen and (min-width: 897px) {
+    margin: 0rem 1rem 1rem 1rem;
+    &:nth-child(3) {
+      margin-top: 5rem;
+    }
+    &:nth-child(5) {
+      margin-top: 10rem;
+    }
   }
 `;
 export const Cardimg = styled.div`
@@ -35,8 +40,19 @@ export const Cardimg = styled.div`
   & img {
     width: 2rem;
   }
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 896px) {
     left: 50%;
     transform: translate(-50%, 0%);
+  }
+`;
+export const Line = styled.div`
+  width: 7px;
+  height: 80px;
+  background-color: #2acfcf;
+  @media only screen and (min-width: 897px) {
+     {
+      height: 38px;
+      transform: rotate(90deg);
+    }
   }
 `;

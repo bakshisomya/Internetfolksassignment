@@ -2,22 +2,20 @@ import styled from "styled-components";
 
 export const NavWrapper = styled.div`
   width: 100%;
-  height:10%;
+  height: 98px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media only screen and (min-width: 750px) {
-    height: 5%;
+  padding: 2rem;
+  @media only screen and (min-width: 897px) {
+    height: 128px;
     padding: 3rem 10rem 3rem 10rem;
-  }
-  @media only screen and (max-width: 750px) {
-    height: 4%;
-    padding: 2rem;
+  } 
   }
 `;
 export const Logo = styled.img`
   width: 95px;
-  @media only screen and (min-width: 750px) {
+  @media only screen and (min-width: 897px) {
     margin-right: 3rem;
   }
 `;
@@ -26,14 +24,14 @@ export const Left = styled.div`
   display: flex;
   justify-content: left;
   align-items: center;
-  @media only screen and (min-width: 750px) {
+  @media only screen and (min-width: 897px) {
     & Button {
       display: none;
     }
   }
 `;
 export const Linkwrap = styled.div`
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 896px) {
     display: ${({ show }) => (show ? "flex" : "none")};
     flex-direction: ${({ show }) => (show ? "column" : "")};
     justify-content: ${({ show }) => (show ? "center" : "")};
@@ -69,10 +67,10 @@ export const Link = styled.a`
   text-decoration: none;
   font-size: 14px;
   font-weight: 700;
-  @media only screen and (min-width: 750px) {
+  @media only screen and (min-width: 897px) {
     margin-right: 1.8rem;
   }
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 896px) {
     display: ${({ show }) => (show ? "flex" : "none")};
     color: white;
     margin-bottom: 2rem;
@@ -87,17 +85,17 @@ export const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  @media only screen and (min-width: 750px) {
+  @media only screen and (min-width: 897px) {
     & i {
       display: none;
     }
   }
   & Button {
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 896px) {
       display: none;
     }
   }
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 896px) {
     & i {
       display: flex;
       color: #9e9aa7;

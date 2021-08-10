@@ -33,7 +33,6 @@ function Mainbody() {
         let arr = [...output];
         arr.push(newobj);
         setoutput(arr);
-        console.log(res);
       })
       .catch((err) => {
         console.log(err);
@@ -65,13 +64,13 @@ function Mainbody() {
             linehmobile="1.1"
             lettersp="-1.2px"
             letterspmobile="-1px"
-            marginmobile="1rem"
+            marginmobile="1.5rem"
           >
             More than just shorter links
           </Text>
           <Text fontweight="500" color="#bfbfbf" fontsize="18px" margin="2rem">
-            Build your brand's recognition and get detailed
-            <br /> insights on how your links are performing.
+            Build your brand's recognition and get detailed insights on how your
+            links are performing.
           </Text>
           <Button
             padding="12px 40px"
@@ -114,19 +113,14 @@ function Mainbody() {
             Shorten It!
           </Button>
         </Form>
+        {output.length > 0 ? <Outputcards input={input} output={output} /> : ""}
         <Lowerbody>
-          {output.length > 0 ? (
-            <Outputcards input={input} output={output} />
-          ) : (
-            ""
-          )}
           <Text margin="1rem" color="#232127">
             Advanced Statistics
           </Text>
           <Text2
             textalign="center"
             color="#9e9aa7"
-            margin="5rem"
             marginmobile="6rem"
           >
             Track how your links are performing accross the web with

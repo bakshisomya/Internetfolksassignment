@@ -3,10 +3,8 @@ import styled from "styled-components";
 export const Div = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   width: 100%;
-  height: 100%;
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 896px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,10 +14,9 @@ export const Div = styled.div`
 export const Linkwrap = styled.div`
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   width: 65%;
-  height: 100%;
-  padding-top: 0.5rem;
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 896px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,12 +26,11 @@ export const Linkwrap = styled.div`
 `;
 export const Col = styled.div`
   width: 100%;
-  height: 100%;
   display: ${(props) => props.display};
   flex-direction:${(props) => props.direction};
   justify-content: ${(props) => props.justify};
   align-items: ${(props) => props.align};
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 896px) {
     display: ${(props) => props.displaymobile};
     justify-content: ${(props) => props.justifymobile};
     align-items: ${(props) => props.alignmobile};
@@ -55,7 +51,7 @@ export const Footerlink = styled.a`
   color: ${(props) => props.color};
   margin-bottom: ${(props) => props.margin};
   text-align: ${(props) => props.textalign};
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 896px) {
     font-size: ${(props) => props.fontsizemobile};
     font-weight: ${(props) => props.fontweightmobile};
     line-height: ${(props) => props.linehmobile};
@@ -77,7 +73,7 @@ export const I = styled.i`
     color: #2acfcf;
     cursor: pointer;
   }
-  @media only screen and (min-width: 750px) {
+  @media only screen and (min-width: 897px) {
     margin-top: -0.1rem;
   }
 `;
